@@ -31,6 +31,7 @@ print(paramter) # parameter for linear regression model
 
 # putting it on the scatter plot
 
+
 y_predict=x2.dot(est_lung.params.values)
 plt.scatter(x,y)
 plt.plot(x,y_predict,'r--')
