@@ -52,7 +52,6 @@ print("eigevectors = ", U , "P = " , P)
 # After projection
 
 pca_manual = np.dot (X, P)
-
 print ("Project data to 2D:", pca_manual)
 
 
