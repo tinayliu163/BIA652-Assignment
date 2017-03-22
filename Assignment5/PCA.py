@@ -55,25 +55,6 @@ pca_manual = np.dot (X, P)
 
 print ("Project data to 2D:", pca_manual)
 
-# Visualize the 2D data as a scatter plot, and annotate the dots using the digit label.
-
-# generate 77 random colors, one for each cereal
-
-random.seed(123)
-color = ["#%06x" % random.randint(0, 0xAAAAAA) for i in range(0, digits.shape[0])]
-from pylab import rcParams #set figure size
-rcParams['figure.figsize'] = 15, 15
-
-#scatter plot
-
-for x, y, c in zip(digits_pca[:,0], digits_pca[:,1], color):
-	plt.scatter(x,y,color=c)
-
-#labels
-for label, x, y, c in zip (labels, digits_pca[:,0],digits_pca[:,1], color):
-	plt.annotate(label, xy = (x, y), xytext = (-0, 0)
-	textcoords = 'offset points', ha = 'right', va = 'bottom', color=c)
-	plt.show()
 
 
 
