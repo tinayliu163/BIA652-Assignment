@@ -6,8 +6,8 @@ import statsmodels.api as sm
 
 # import data
 
-head = pd.read_csv("/Users/admin/Downloads/data/Afifi_book/LungSchema", header = None, sep=' ')
-lung = pd.read_csv("/Users/admin/Downloads/data/Afifi_book/Lung.txt", sep=' ', header=None)
+head = pd.read_csv("./LungSchema", header = None, sep=' ')
+lung = pd.read_csv("./Lung.txt", sep=' ', header=None)
 lung.columns = head[1].values
 lung[["FEV1_father","Age_father","Height_father_inch"]][:7]
 print(lung.head())
