@@ -18,7 +18,6 @@ from sklearn.neighbors import KNeighborsClassifier
 sp = pd.read_csv("/Users/admin/Downloads/Dataset_spine.csv")
 sp[:4]
 
-
 # convert categorical value to 1/0
 def f(x):
     if "Normal" in x:
@@ -66,6 +65,7 @@ kNN = KNeighborsClassifier(n_neighbors=6)
 kNN.fit(data_train, label_train) 
 
 # performance
+
 
 fpr_kNN, tpr_kNN, thresholds_kNN = metrics.roc_curve(label_test, kNN.predict_proba(data_test)[:,1], pos_label=1)
 AUC_KNN = metrics.auc(fpr_kNN, tpr_kNN)
