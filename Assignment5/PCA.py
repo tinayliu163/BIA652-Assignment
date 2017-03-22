@@ -11,8 +11,8 @@ from sklearn.decomposition import PCA
 from sklearn.preprocessing import StandardScaler
 import random
 
-digits_label=pd.read_csv("/Users/admin/Desktop/digits_label_random_sample.csv",index_col = 0)
-digits = pd.read_csv("/Users/admin/Desktop/digits_random_sample.csv", index_col = 0)
+digits_label=pd.read_csv("./digits_label_random_sample.csv",index_col = 0)
+digits = pd.read_csv("./digits_random_sample.csv", index_col = 0)
 
 digits2 = StandardScaler(with_std=False).fit_transform(digits)
 pca = PCA(n_components=2)
