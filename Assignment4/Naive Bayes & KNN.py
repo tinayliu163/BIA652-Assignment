@@ -15,7 +15,7 @@ from sklearn.neighbors import KNeighborsClassifier
 
 # import data
 
-sp = pd.read_csv("/Users/admin/Downloads/Dataset_spine.csv")
+sp = pd.read_csv("./Dataset_spine.csv")
 sp[:4]
 
 # convert categorical value to 1/0
