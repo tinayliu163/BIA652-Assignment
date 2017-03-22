@@ -13,6 +13,7 @@ lung[["FEV1_father","Age_father","Height_father_inch"]][:7]
 print(lung.head())
 
 # do a scatter plot
+
 y = lung["FEV1_father"]
 x = lung[["Age_father"]]
 plt.ylabel('FEV1_father')
