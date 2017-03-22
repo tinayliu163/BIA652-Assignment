@@ -18,6 +18,7 @@ from sklearn.neighbors import KNeighborsClassifier
 sp = pd.read_csv("/Users/admin/Downloads/Dataset_spine.csv")
 sp[:4]
 
+
 # convert categorical value to 1/0
 def f(x):
     if "Normal" in x:
