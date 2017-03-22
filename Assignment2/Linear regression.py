@@ -4,7 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import statsmodels.api as sm
 
-# get data
+# import data
 
 head = pd.read_csv("/Users/admin/Downloads/data/Afifi_book/LungSchema", header = None, sep=' ')
 lung = pd.read_csv("/Users/admin/Downloads/data/Afifi_book/Lung.txt", sep=' ', header=None)
