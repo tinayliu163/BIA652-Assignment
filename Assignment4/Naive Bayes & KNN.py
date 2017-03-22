@@ -7,10 +7,11 @@ import pandas as pd
 import sklearn
 import matplotlib.pyplot as plt
 import statsmodels.api as sm
-%matplotlib inline
+
 from sklearn.naive_bayes import GaussianNB
 from sklearn import metrics
 from sklearn.neighbors import KNeighborsClassifier
+
 
 # import data
 
@@ -56,7 +57,7 @@ plt.ylabel('True Positive Rate')
 plt.title('Naive Bayes: ROC Curve ')
 plt.show()
 
-print("Naive Bayes AUC = %0.3f", % AUC)
+print("Naive Bayes AUC :", AUC)
 
 # KNN model
 
@@ -78,7 +79,7 @@ plt.ylabel('True Positive Rate')
 plt.title('Naive Bayes: ROC Curve ')
 plt.show()
 
-print("kNN AUC = %0.3f", % AUC_KNN)
+print("kNN AUC:", AUC_KNN)
 
 
 
