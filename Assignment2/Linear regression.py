@@ -14,8 +14,6 @@ print(lung.head())
 
 # do a scatter plot
 
-
-
 y = lung["FEV1_father"]
 x = lung[["Age_father"]]
 plt.ylabel('FEV1_father')
